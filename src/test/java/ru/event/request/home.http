@@ -1,0 +1,7 @@
+GET http://localhost:8080/home
+Accept: */*
+Authorization: Basic admin admin
+Content-Type: application/json
+Cache-Control: no-cache
+
+###

@@ -1,0 +1,26 @@
+GET http://localhost:8080/found/by/swipe
+Accept: */*
+Authorization: Basic $2a$10$MRz7H0DPvrBoGybu5uRpEO757mHMzP7kxpjGPfDqs8of6uVKHV12m admin
+Content-Type: application/json
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:8080/found/by/swipe
+Accept: */*
+Authorization: Basic test4 test4
+Content-Type: application/json
+Cache-Control: no-cache
+
+{
+  "user": {
+    "id": "10",
+    "username": "test3",
+    "password": "test3",
+    "phone": "77777",
+    "active": true
+  },
+  "evaluation": "like"
+}
+
+###

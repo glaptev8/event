@@ -1,0 +1,12 @@
+POST http://localhost:8080/registration
+Accept: */*
+Content-Type: application/json
+Cache-Control: no-cache
+
+{
+    "username":"test4",
+    "password":"test4",
+    "phone":"77777"
+}
+
+###

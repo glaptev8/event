@@ -1,0 +1,38 @@
+GET http://localhost:8080/event/get/by/filter
+Accept: */*
+Authorization: Basic admin admin
+Content-Type: application/json
+Cache-Control: no-cache
+
+{
+  "filterEvent": {
+    "pageSize": 1,
+    "pageNumber": 1,
+    "endDate": "2021.11.23",
+    "startDate": "2021.10.23",
+    "entertainmentType": [
+      "RUN"
+    ]
+  },
+  "printType": "LIST"
+}
+
+###
+
+POST http://localhost:8080/event/create
+Accept: */*
+Authorization: Basic admin admin
+Content-Type: application/json
+Cache-Control: no-cache
+
+{
+  "event": {
+    "description": "testEvent",
+    "entertainmentType": "RUN",
+    "endDate": "2021.11.23",
+    "startDate": "2021.10.23",
+    "countUser": 4
+  }
+}
+
+###
