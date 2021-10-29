@@ -128,7 +128,6 @@
                         this.event.startDate += " " + this.startTime;
                         this.event.endDate += " " + this.endTime;
                         this.dialog = false;
-                        console.log(result);
                     }
                 })
             }
